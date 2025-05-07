@@ -7,7 +7,6 @@ def create_hashtag(text):
     if not text:
         return "#"
 
-    # words = text.split()
     text = original_text.translate(str.maketrans('', '', string.punctuation))
     words = text.strip().split()
     capitalized_words = [word.capitalize() for word in words]
